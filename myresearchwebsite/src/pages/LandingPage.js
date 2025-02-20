@@ -10,14 +10,16 @@ export default function LandingPage() {
   <div>
     <Header />
       <main className="flex-1 relative top-10">
-        {/* Content goes here */}
+        {<p>some content</p>
+      }
+        <div>
+      <HeroVideo />
+    </div>
         <div className=" min-h-72"></div>
         <div className=" min-h-72"></div>
         <div className=" min-h-72"></div>
       </main>
-      <div>
-      <HeroVideo />
-    </div>
+      
 
     <Footer />
       
