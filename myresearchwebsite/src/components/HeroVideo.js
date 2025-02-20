@@ -9,8 +9,8 @@ const HeroVideo = () => {
         Your browser does not support the video tag.
       </video>
       <div className="video-overlay">
-        <h1>Welcome to Research Hub</h1>
-        <p>Explore the latest publications and innovations</p>
+        <h1 className="text-8xl font-bold py-5 ">Welcome to Research Hub</h1>
+        <p className="text-3xl" >Explore the latest publications and innovations</p>
       </div>
     </div>
   );
