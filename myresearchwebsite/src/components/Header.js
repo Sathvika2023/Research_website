@@ -1,7 +1,7 @@
 import React from "react";
 
 const Header = () => (
-    <div className="min-h-screen flex flex-col bg-white font-mono">
+    <div className="flex flex-col bg-white font-mono">
         <header className="relative top-10 left-0 w-full px-12 py-5 flex justify-around items-center gap-10 bg-transparent z-50 shadow-md shadow-blue-200">
             <div className="flex items-center text-5xl font-bold bg-gradient-to-r from-blue-700 to-blue-400 bg-clip-text text-transparent">
                 DSCE Research
