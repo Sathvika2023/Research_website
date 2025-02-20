@@ -9,13 +9,8 @@ export default function LandingPage() {
    
   <div>
     <Header />
-      <main className="flex-1 relative top-10">
-        {<p>some content</p>
-      }
-        <div>
+      <main className="flex-1 relative top-10">   
       <HeroVideo />
-    </div>
-        <div className=" min-h-72"></div>
         <div className=" min-h-72"></div>
         <div className=" min-h-72"></div>
       </main>
