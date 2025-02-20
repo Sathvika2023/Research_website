@@ -1,8 +1,8 @@
 import React from "react";
 import { FaFacebookF, FaTwitter, FaLinkedinIn, FaInstagram } from "react-icons/fa"; // Import social media icons
-import HeroVideo from "./components/HeroVideo";
-import Header from "./components/Header";
-import Footer from "./components/Footer";
+import HeroVideo from "../components/HeroVideo";
+import Header from "../components/Header";
+import Footer from "../components/Footer";
 
 export default function LandingPage() {
   return (
