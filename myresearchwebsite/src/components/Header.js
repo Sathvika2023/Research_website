@@ -37,11 +37,12 @@ const Header = () => {
             </li>
             <li>
               <a
-                href="#researchCenters"
-                className="text-blue-600 text-2xl font-normal hover:text-yellow-400 hover:underline underline-offset-8 transition-colors duration-200"
-              >
+                onClick={() => navigate('/research')}
+                className="text-blue-600 text-2xl font-normal hover:text-yellow-400 hover:underline underline-offset-8 transition-colors duration-200 cursor-pointer"
+                >
                 Research Centers
               </a>
+
             </li>
             <li className="group relative">
               <a

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Research Centers</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+        }
+        .center {
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+        .center h2 {
+            margin-top: 0;
+            color: #333;
+        }
+        .center p {
+            color: #666;
+        }
+        .center a {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+        .center a:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <h1>Research Centers</h1>
+    <div id="centers-container"></div>
+
+    <script>
+        const centers = [
+            {
+                name: "Aeronautical Engineering",
+                description: "Research on aircraft design, propulsion, and aerodynamics."
+            },
+            {
+                name: "Automobile Engineering",
+                description: "Explores advancements in vehicle technology and design."
+            },
+            {
+                name: "Biotechnology",
+                description: "Focuses on genetic engineering, bioinformatics, and medical research."
+            },
+            {
+                name: "Chemical Engineering",
+                description: "Studies chemical processes for industrial and environmental applications."
+            },
+            {
+                name: "Civil Engineering",
+                description: "Works on structural integrity, urban planning, and sustainability."
+            },
+            {
+                name: "Computer Science and Engineering",
+                description: "Research on AI, ML, and software development."
+            },
+            {
+                name: "Electrical and Electronics Engineering",
+                description: "Advances in power systems, automation, and electronic circuits."
+            },
+            {
+                name: "Electronics and Communication Engineering",
+                description: "Innovations in wireless technology, embedded systems, and signal processing."
+            },
+            {
+                name: "Information Science and Engineering",
+                description: "Research in data science, cybersecurity, and intelligent systems."
+            },
+            {
+                name: "Mechanical Engineering",
+                description: "Studies thermodynamics, materials science, and machine design."
+            }
+        ];
+
+        const container = document.getElementById('centers-container');
+        centers.forEach(center => {
+            const div = document.createElement('div');
+            div.className = 'center';
+            div.innerHTML = `
+                <h2>${center.name}</h2>
+                <p>${center.description}</p>
+                <a href="#">Learn More</a>
+            `;
+            container.appendChild(div);
+        });
+    </script>
+</body>
+</html>

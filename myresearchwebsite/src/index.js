@@ -10,6 +10,8 @@ import { BrowserRouter as Router, Routes, Route} from 'react-router-dom';
 // Add scrollbar-hide class to root element
 
 
+import Researchcenterhome from './Researchcenterhome';
+import ResearchCenter from './ResearchCenter';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
@@ -17,6 +19,8 @@ root.render(
       <Routes>
         <Route path="/" element={<LandingPage /> } />
         <Route path="/fundedprojects" element={<FundedProjects2 />} />
+        <Route path="/research" element={<Researchcenterhome />} />
+          <Route path="/research-center/:centerName" element={<ResearchCenter />} />
       </Routes>
     </Router>
   </React.StrictMode>
