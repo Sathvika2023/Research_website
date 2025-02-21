@@ -5,6 +5,8 @@ import reportWebVitals from './reportWebVitals';
 import LandingPage from './pages/LandingPage';
 import { BrowserRouter as Router, Routes, Route} from 'react-router-dom';
 import FundedProjects2 from './pages/FundedProjects2';
+import Researchcenterhome from './Researchcenterhome';
+import ResearchCenter from './ResearchCenter';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
@@ -12,6 +14,8 @@ root.render(
       <Routes>
         <Route path="/" element={<LandingPage /> } />
         <Route path="/fundedprojects" element={<FundedProjects2 />} />
+        <Route path="/research" element={<Researchcenterhome />} />
+          <Route path="/research-center/:centerName" element={<ResearchCenter />} />
       </Routes>
     </Router>
   </React.StrictMode>
