@@ -1,10 +1,15 @@
+import './index.css';
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import './index.css';
 import reportWebVitals from './reportWebVitals';
 import LandingPage from './pages/LandingPage';
-import { BrowserRouter as Router, Routes, Route} from 'react-router-dom';
 import FundedProjects2 from './pages/FundedProjects2';
+import { BrowserRouter as Router, Routes, Route} from 'react-router-dom';
+
+
+// Add scrollbar-hide class to root element
+
+
 import Researchcenterhome from './Researchcenterhome';
 import ResearchCenter from './ResearchCenter';
 const root = ReactDOM.createRoot(document.getElementById('root'));
