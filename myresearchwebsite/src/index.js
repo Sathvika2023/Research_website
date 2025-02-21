@@ -3,11 +3,17 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import reportWebVitals from './reportWebVitals';
 import LandingPage from './pages/LandingPage';
-
+import { BrowserRouter as Router, Routes, Route} from 'react-router-dom';
+import FundedProjects2 from './pages/FundedProjects2';
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <LandingPage />
+    <Router>
+      <Routes>
+        <Route path="/" element={<LandingPage /> } />
+        <Route path="/fundedprojects" element={<FundedProjects2 />} />
+      </Routes>
+    </Router>
   </React.StrictMode>
 );
 
