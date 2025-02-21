@@ -1,19 +1,19 @@
 import React from "react";
 import { useNavigate } from "react-router";
 const Header = () => {
-
+  const navigate = useNavigate()
 
   return (
-    <div className=" flex flex-col bg-white font-mono">
+    <div className=" flex flex-col bg-white font-avenir ">
       <header className="relative top-10 left-0 w-full px-12 py-5 flex justify-around items-center gap-10 bg-transparent z-50 shadow-md shadow-blue-200">
-        <div className="flex items-center text-5xl font-bold bg-gradient-to-r from-blue-700 to-blue-400 bg-clip-text text-transparent">
+        <div onClick={()=> navigate('/')} className="flex items-center text-5xl font-bold bg-gradient-to-r from-blue-700 to-blue-400 bg-clip-text text-transparent">
           DSCE Research
         </div>
         <nav>
           <ul className="flex space-x-8 list-none">
-            <li>
+            <li onClick={()=> navigate('/')}>
               <a
-                href="/"
+                href=""
                 className="text-blue-600 text-2xl font-normal hover:text-yellow-400 hover:underline underline-offset-8 transition-colors duration-200"
               >
                 Research
@@ -67,7 +67,7 @@ const Header = () => {
                     Patents
                   </a>
                 </li>
-                <li className="block">
+                <li className="block" onClick={()=> navigate('/fundedprojects')}>
                   <a
                     href="/fundedprojects"
                     className="block py-3 px-6 text-left text-l hover:text-yellow-400 hover:scale-105 transform transition-all duration-200"
