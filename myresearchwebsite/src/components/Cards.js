@@ -1,4 +1,5 @@
 import React from "react";
+import { SlArrowRight } from "react-icons/sl";
 
 const proj = [
   {
@@ -23,14 +24,17 @@ const proj = [
 function Cards() {
   return (
     <div className="min-h-screen bg-gradient-to-br from-blue-900 to-indigo-900 flex flex-col items-center justify-center p-6">
-      <div className="grid md:grid-cols-3 gap-8 w-full max-w-6xl">
+      <div className="flex flex-wrap justify-around w-full max-w-8xl">
         {proj.map((project, index) => (
           <div
             key={index}
-            className="bg-white/10 backdrop-blur-md shadow-lg pt-8 pb-12 p-6 rounded-2xl border border-white/20 text-white transform transition-all duration-300 hover:scale-105 hover:shadow-xl"
+            className="flex flex-col items-center bg-white/10 backdrop-blur-md shadow-lg p-6 rounded-2xl border border-white/20 text-white text-center transform transition-all duration-300 hover:scale-105 hover:shadow-xl w-80"
           >
-            <h2 className="text-4xl text-center font-semibold mb-10">{project.user}</h2>
-            <p className="text-gray-200 text-lg">{project.description}</p>
+            <h2 className="text-2xl font-semibold mb-6">{project.user}</h2>
+            <p className="text-gray-200 text-lg pb-6">{project.description}</p>
+            <div className=" flex items-center justify-center px-3 py-3 rounded-full bg-white/20 hover:bg-white/30 transition">
+            <SlArrowRight className="text-white text-xl" />
+            </div>
           </div>
         ))}
       </div>
