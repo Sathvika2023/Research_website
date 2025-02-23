@@ -21,7 +21,7 @@ const Header = () => {
             </li>
             <li>
               <a
-                href="#faculty"
+                onClick={() => navigate('/faculty')}
                 className="text-blue-600 text-2xl font-normal hover:text-yellow-400 hover:underline underline-offset-8 transition-colors duration-200"
               >
                 Faculty
